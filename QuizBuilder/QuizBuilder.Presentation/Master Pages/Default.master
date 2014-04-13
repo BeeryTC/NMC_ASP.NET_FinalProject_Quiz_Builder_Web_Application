@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Default.master.cs" Inherits="Master_Pages_Default" %>
+
+<!DOCTYPE html>
+<!--
+    Created by: Bethany Beery
+    Date Created: 2/22/2014
+    College: Northwestern Michigan College
+    Class: CIT218 ASP.NET
+    Instructor: John Velis
+
+    Master Page for home log in - uses default and logout pages for content
+-->
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>- Quiz Builder | <%: Page.Title %></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" /> <!-- Links CSS -->
+    <link href="../Images/Q.png" rel="shortcut icon" type="Images/Q" /> <!-- Browser page tab icon -->
+    <meta name="viewport" content="width=device-width" />
+</head>
+<body>
+        <!-- HEADER NAVIGATION AND LOGO -->
+        <header>
+             <div class="pageFormatting">
+                 <!-- LOGO -->
+                    <div class="float-left">
+                        <p><a runat="server" href="Default.aspx"><img src="Images/QuizBuilder_Logo.png"></a></p>
+                     </div>
+                 <!-- NAVIGATION -->
+                    <div id="login" class="float-right">
+                        <ul>
+                             <li><a id="registerLink" runat="server" href="~/Register.aspx">REGISTER</a></li>
+                             <li><a id="loginInLink" runat="server" href="~/Default.aspx">LOG IN</a></li>
+                        </ul>
+                   </div>
+             </div>
+        </header>
+
+        <!-- FORM CONTENT - LOG IN/REGISTER FORM Placeholder -->
+        <section>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+        </section>
+
+        <!-- FOOTER -->      
+         <footer>
+             <div class="pageFormatting">
+             <p>&copy; <%: DateTime.Now.Year %> - Bethany Beery</p>
+             </div>
+         </footer>
+    </body>
+</html>
+
+
