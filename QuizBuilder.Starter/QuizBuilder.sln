@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizBuilder", "QuizBuilder\QuizBuilder.csproj", "{3319ADD9-0F31-417F-97C5-7FE4B87B357C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizBuilder.Data", "QuizBuilder.Data\QuizBuilder.Data.csproj", "{8A98C6EF-25CF-4ADD-A8FC-25242FD274EA}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "QuizBuilder.Web(3)", "http://localhost:4364", "{9FC98BF5-CDB7-4D03-9943-490098206994}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{3319add9-0f31-417f-97c5-7fe4b87b357c}|QuizBuilder.dll;{8a98c6ef-25cf-4add-a8fc-25242fd274ea}|QuizBuilder.Data.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_4364"
+		Debug.AspNetCompiler.PhysicalPath = "QuizBuilder.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4364\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_4364"
+		Release.AspNetCompiler.PhysicalPath = "QuizBuilder.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4364\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "QuizBuilder.Web\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3319ADD9-0F31-417F-97C5-7FE4B87B357C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3319ADD9-0F31-417F-97C5-7FE4B87B357C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3319ADD9-0F31-417F-97C5-7FE4B87B357C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3319ADD9-0F31-417F-97C5-7FE4B87B357C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A98C6EF-25CF-4ADD-A8FC-25242FD274EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A98C6EF-25CF-4ADD-A8FC-25242FD274EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A98C6EF-25CF-4ADD-A8FC-25242FD274EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A98C6EF-25CF-4ADD-A8FC-25242FD274EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FC98BF5-CDB7-4D03-9943-490098206994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FC98BF5-CDB7-4D03-9943-490098206994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FC98BF5-CDB7-4D03-9943-490098206994}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FC98BF5-CDB7-4D03-9943-490098206994}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
