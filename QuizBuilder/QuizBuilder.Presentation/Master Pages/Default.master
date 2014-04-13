@@ -24,7 +24,7 @@
              <div class="pageFormatting">
                  <!-- LOGO -->
                     <div class="float-left">
-                        <p><a runat="server" href="Default.aspx"><img src="Images/QuizBuilder_Logo.png"></a></p>
+                        <p><a runat="server" href="~/Default.aspx"><img src="Images/QuizBuilder_Logo.png"></a></p>
                      </div>
                  <!-- NAVIGATION -->
                     <div id="login" class="float-right">

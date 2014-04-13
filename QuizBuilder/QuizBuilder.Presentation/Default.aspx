@@ -62,7 +62,7 @@
                                  <td><!-- empty first column --></td>               
                                  <td><asp:Button ID="btn_loginUser" runat="server" 
                                       Text="LOG IN" 
-                                      Width ="100px" />
+                                      Width ="100px" OnClick="btn_loginUser_Click" />
                                 </td> 
             </tr> 
        </table>    

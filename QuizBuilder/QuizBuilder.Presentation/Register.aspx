@@ -103,7 +103,7 @@
                                  <td><!-- empty first column --></td>               
                                  <td><asp:Button ID="submitNewUserInfo" runat="server" 
                                       Text="Register" 
-                                      Width ="100px" />
+                                      Width ="100px" OnClick="submitNewUserInfo_Click" />
                                 </td> 
             </tr> 
        </table>    
