@@ -2,10 +2,12 @@
 
 <asp:Content ID="User_Intro" ContentPlaceHolderID="Content_Intro" runat="server">
     <!--
-    Class: CIT218 ASP.NET
-    Instructor: John Velis
-    Created by: Bethany Beery
-    Date Created: 3/2/2014
+    Bethany Beery
+    Final Web App
+    Created 4/12/2014
+    Northwestern Michigan College
+    CIT218 ASP.NET
+    Instructor John Valis
 
     First page quiz taker users see when logging in
     -->
