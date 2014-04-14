@@ -17,6 +17,39 @@
 
         <br>
        <table>
+
+            <!-- FIRST NAME -->
+            <tr>
+                <!--Label -->      <td><asp:Label ID="FirstNameLabel" runat="server" AssociatedControlID="FirstName">First Name:</asp:Label></td>
+       
+                <!-- Text box -->  <td><asp:TextBox ID="FirstName" runat="server"></asp:TextBox>
+                                         <!-- Validation -->
+                                         <asp:RequiredFieldValidator ID="FirstNameRequired" runat="server" 
+                                                ControlToValidate="FirstName" 
+                                                ErrorMessage="First Name is required." 
+                                                ToolTip="First Name is required." 
+                                                CssClass="error"
+                                                ValidationGroup="formRegistration">* 
+                                         </asp:RequiredFieldValidator>
+                                  </td>
+           </tr>
+
+            <!-- LAST NAME -->
+            <tr>
+                <!--Label -->      <td><asp:Label ID="LastNameLabel" runat="server" AssociatedControlID="LastName">Last Name:</asp:Label></td>
+       
+                <!-- Text box -->  <td><asp:TextBox ID="LastName" runat="server"></asp:TextBox>
+                                         <!-- Validation -->
+                                         <asp:RequiredFieldValidator ID="LastNameRequired" runat="server" 
+                                                ControlToValidate="LastName" 
+                                                ErrorMessage="Last Name is required." 
+                                                ToolTip="Last Name is required." 
+                                                CssClass="error"
+                                                ValidationGroup="formRegistration">* 
+                                         </asp:RequiredFieldValidator>
+                                  </td>
+           </tr>
+
            <!-- USER NAME -->
             <tr>
                 <!--Label -->      <td><asp:Label ID="UserNameLabel" runat="server" AssociatedControlID="UserName">User Name:</asp:Label></td>
