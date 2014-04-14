@@ -73,13 +73,16 @@
            <!-- LOGIN BUTTON -->               
            <tr>
                                  <td><!-- empty first column --></td>               
-                                 <td style="width: 536px"><asp:Button ID="btn_loginUser" runat="server" 
+                                 <td style="width: 536px">
+                                     <a runat="server" href="Register.aspx"><h3>* Register if you don't have an account</h3></a>
+                                     <asp:Button ID="btn_loginUser" runat="server" 
                                       Text="LOG IN" 
                                       Width ="100px" 
                                       ValidationGroup="formLogInUser"
                                       OnClick="btn_loginUser_Click" />
                                 </td> 
             </tr> 
+
        </table>    
      </form>
   </section>
