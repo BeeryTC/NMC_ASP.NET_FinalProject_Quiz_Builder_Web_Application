@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizBuilder", "QuizBuilder\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizBuilder.Data", "QuizBuilder.Data\QuizBuilder.Data.csproj", "{8A98C6EF-25CF-4ADD-A8FC-25242FD274EA}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "QuizBuilder.Web(3)", "http://localhost:4364", "{9FC98BF5-CDB7-4D03-9943-490098206994}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "QuizBuilder.Web", "http://localhost:4364", "{9FC98BF5-CDB7-4D03-9943-490098206994}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
@@ -30,6 +30,12 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "QuizBuilder.Web(3)", "http:
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation Layer", "Presentation Layer", "{F48B21B2-38FC-411E-8C57-D58B5464475A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Access Layer", "Data Access Layer", "{2A055292-461D-4F8C-BB1D-293F5B3E2A7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business Layer", "Business Layer", "{8B0FA11C-B86C-45D4-8F14-22798A9D365A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,5 +57,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9FC98BF5-CDB7-4D03-9943-490098206994} = {F48B21B2-38FC-411E-8C57-D58B5464475A}
+		{8A98C6EF-25CF-4ADD-A8FC-25242FD274EA} = {2A055292-461D-4F8C-BB1D-293F5B3E2A7B}
+		{3319ADD9-0F31-417F-97C5-7FE4B87B357C} = {8B0FA11C-B86C-45D4-8F14-22798A9D365A}
 	EndGlobalSection
 EndGlobal
