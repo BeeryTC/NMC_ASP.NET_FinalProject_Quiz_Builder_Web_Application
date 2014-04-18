@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using QuizBuilder;
+using System.Data;
 
     /* 
     Bethany Beery
@@ -20,8 +22,11 @@ public partial class Take_Quiz : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        // Populate list view with first scenario
+        // GetFirst();
 
     }
+
     protected void btn_userQuizAnswer_Click(object sender, EventArgs e)
     {
 

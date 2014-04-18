@@ -7,7 +7,7 @@
     Instructor: John Velis
     Created by: Bethany Beery
     Project: Quizer Builder Application: Server and Validation Controls
-    Date Created: 3/6/2014
+    Date Created: 4/14/2014
 
     Quiz results page - users will find out their score
     

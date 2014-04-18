@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using QuizBuilder.Data;
+using System.Configuration;
 
 /*
     Bethany Beery
@@ -24,16 +26,32 @@ public partial class _Default : System.Web.UI.Page
     }
     protected void btn_loginUser_Click(object sender, EventArgs e)
     {
-        //email = txt_EmailLogin.Text;
-        //password = txt_PasswordLogin.Text;
+        QuizBuilder.AuthenticateUser auth = new QuizBuilder.AuthenticateUser();
+        User obj = new User();
+        obj.Password = txt_PasswordLogin.Text;
+        obj.Email = txt_EmailLogin.Text;
+        
+        UserRepository userR = new UserRepository();
+        userR.GetUser(obj.Email, obj.Password);
 
-        //User GetUser(string username, string password);
-        // Check email and password against database
+        //auth.IsValidUser(obj.Email, obj.Password);
 
-        // If correct, redirect to user landing page
+        if (obj.IsAdmin == true)
+        //if(auth.IsValidUser == true)
+        {
+            //navigate and set admin
+            Response.Redirect("Admin_Home.aspx");
+        }
+        else if (obj.IsAdmin == false)
+        {
+            //navigate and set user
+            Response.Redirect("User_Home.aspx");
+        }
 
-        // Else, redirect user to register for an account
-        // Response.Redirect("Register.aspx");
-
+        else
+        {
+            Response.Redirect("Register.aspx");
+        }
     }
+
 }

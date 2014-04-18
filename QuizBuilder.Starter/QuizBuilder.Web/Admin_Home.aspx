@@ -1,15 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master Pages/Admin.master" AutoEventWireup="true" CodeFile="Admin_Home.aspx.cs" Inherits="Admin_Home" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master Pages/AdminHome.master" AutoEventWireup="true" CodeFile="Admin_Home.aspx.cs" Inherits="Admin_Home" %>
 
 <asp:Content ID="Admin_Intro" ContentPlaceHolderID="Content_Intro" runat="server">
     
     <!--
-    Bethany Beery
-    Final Web App
-    Created 4/12/2014
-    Northwestern Michigan College
-    CIT218 ASP.NET
-    Instructor John Valis
-
+    Class: CIT218 ASP.NET
+    Instructor: John Velis
+    Created by: Bethany Beery
+    Date Created: 3/2/2014
     First page administrators see when logging in
     -->
     
@@ -33,7 +30,7 @@
     </article>
 </asp:Content>
 
-<asp:Content ID="Admin_Right" ContentPlaceHolderID="Content_RightColumn" runat="server">
+<asp:Content ID="Admin_Middle" ContentPlaceHolderID="Content_MiddleColumn" runat="server">
     <article>
     <a runat="server" href="Admin_Quiz.aspx"><img src="Images/admin_users.png" /></a>
     <br> 
@@ -45,5 +42,16 @@
     </article>
 </asp:Content>
 
+<asp:Content ID="Admin_Right" ContentPlaceHolderID="Content_RightColumn" runat="server">
+    <article>
+    <a runat="server" href="https://www.microsoft.com/learning/en-us/exam-98-363.aspx"><img src="Images/admin_users.png"></a>  
+    <br> 
+    <br>
+    <a runat="server" href="https://www.microsoft.com/learning/en-us/exam-98-363.aspx"><h3>MTA EXAM DETAILS</h3></a>
+             <h4>
+             Skills measured
+            </h4>
+    </article>
+</asp:Content>
 
 
