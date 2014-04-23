@@ -26,32 +26,17 @@ public partial class _Default : System.Web.UI.Page
     }
     protected void btn_loginUser_Click(object sender, EventArgs e)
     {
-        QuizBuilder.AuthenticateUser auth = new QuizBuilder.AuthenticateUser();
-        User obj = new User();
-        obj.Password = txt_PasswordLogin.Text;
-        obj.Email = txt_EmailLogin.Text;
-        
         UserRepository userR = new UserRepository();
-        userR.GetUser(obj.Email, obj.Password);
+        string password = txt_PasswordLogin.Text;
+        string user = txt_UserLogin.Text;
+        var obj = userR.GetUser(user, password);
 
-        //auth.IsValidUser(obj.Email, obj.Password);
-
-        if (obj.IsAdmin == true)
-        //if(auth.IsValidUser == true)
-        {
-            //navigate and set admin
-            Response.Redirect("Admin_Home.aspx");
-        }
-        else if (obj.IsAdmin == false)
-        {
-            //navigate and set user
-            Response.Redirect("User_Home.aspx");
-        }
-
-        else
-        {
-            Response.Redirect("Register.aspx");
+            if (obj.IsAdmin == true)
+                //navigate and set admin
+                Response.Redirect("Admin_Home.aspx");
+            else
+                //navigate and set user
+                Response.Redirect("User_Home.aspx");
         }
     }
 
-}

@@ -1,0 +1,159 @@
+﻿/*
+    Class: CIT218 ASP.NET
+    Instructor: John Velis
+    Created by: Bethany Beery
+    Date Created: 3/2/2014
+
+    Styling for Administrators
+*/
+
+
+
+/* Reset Browser Defaults and set website defaults */
+*  {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    }
+
+header, footer, hgroup, nav, section {display: block;}
+
+body {
+    color:black;
+    font-size: 12px;
+    background-color:#000039; 
+	line-height: 1.5;
+    }
+
+header {
+    margin-top:25px;
+    color:white;
+    height:50px;
+    }
+       
+       /*LOGO*/
+       header img { 
+           margin-top:10px;
+           margin-bottom:30px;
+           }
+
+article img, section img {
+    margin-left: 125px;
+    margin-top: 30px;
+    }
+
+label {
+    color:white;
+    padding-right:5px;
+    }
+
+a {text-decoration: none;}
+
+h1 {font-size: 1.5em; text-align:center; font-weight: 500; letter-spacing:1px; padding-top:40px; color:#FF6600; font-family:Rockwell }
+h2 {font-size: 1em; text-align:center; color:white; font-weight: 500; letter-spacing:1px; padding-bottom:40px; margin: 0 auto;}
+h3 {font-size: 1.2em; text-align:center; color:#000039; font-weight: 600; letter-spacing:1px; margin: 0 auto;} 
+h4 {font-size: 1em; text-align:center; color:#000039; font-weight: 500; letter-spacing:0px; margin: 0 auto;}
+
+
+/* Floats */
+.float-left {float: left;}
+.float-right {float: right;}
+.clear-fix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    }
+
+/* page layout */
+.pageFormatting { /* centers page and sets width */
+    margin: 0 auto;
+    max-width: 960px;
+    }
+
+.white_background {background-color:white;}
+
+#container {width:960px; margin:0 auto; background-color:white;}
+
+#top_column {width:960px; height:100px;}
+
+#left_column {float:left; width:320px; height:500px}
+
+#middle_column {float:left; width:320px; height:500px}
+
+#right_column {float:left; width:320px; height:500px}
+
+
+/* Login (Top right Register and log out) */
+#login {
+    display: block;
+    font-size: .75em;
+    font-weight: 500;
+    margin: 0 0 10px ;
+    text-align: right;
+    }
+
+    #login a {
+        color:black;
+        margin-left: 10px;
+        margin-right: 3px;
+        padding: 2px 3px; /*square around text*/
+        background-color: #C3DFE6; /*light blue*/
+        text-decoration: none;
+        }
+        
+        #login a:hover {color:#FF6600; /*orange on roll over*/ }
+
+    #login li {
+        display: inline;
+        list-style: none;
+        }
+
+/* Navigation (Home, take quiz..) */
+ul#navigation {
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing:1px;
+    margin: 15px 0 35px;
+    padding: 0;
+    text-align: right;
+    }
+
+    ul#navigation li {
+        display: inline;
+        padding-left: 15px;
+        }
+
+    ul#navigation li a {
+        color:white;
+        text-decoration: none; 
+        }
+
+        ul#navigation li a:hover {color:  #FF6600; /*orange on roll over*/ }
+
+
+/* Body content */
+section {
+    margin: 20px auto;
+    max-width: 960px;
+    height: 572px;
+    background-color:white;
+}
+
+article {    
+    margin: 20px auto;
+    max-width: 320px;
+    height: 451px;
+    background-color:white;
+    }
+
+footer {
+    clear: both;
+    background-color: #000039;
+    color:white;
+    text-align:left;
+    margin-top:60px;
+    font-size: .9em;
+    }
+

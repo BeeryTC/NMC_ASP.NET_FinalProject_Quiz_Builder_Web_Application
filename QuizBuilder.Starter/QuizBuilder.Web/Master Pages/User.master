@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="User.master.cs" Inherits="Master_Pages_User" %>
+
+<!DOCTYPE html>
+<!--
+    Class: CIT218 ASP.NET
+    Instructor: John Velis
+    Created by: Bethany Beery
+    Date Created: 2/22/2014
+
+    Master Page for users, uses user_home and users_quizzes for content
+-->
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>- Quiz Builder | <%: Page.Title %></title> 
+    <link href="../Styles/Users.css" rel="stylesheet" /> 
+    <link href="../Images/Q.png" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        <!-- HEADER NAVIGATION AND LOGO -->
+             <div class="pageFormatting">
+                 <!-- LOGO -->
+                    <div class="float-left">
+                        <p><a runat="server" href="Default.aspx"><img src="Images/QuizBuilder_Logo.png"></a></p>
+                     </div>
+                 <!-- NAVIGATION -->
+                    <div id="login" class="float-right">
+                        <ul>
+                             <li><a id="logOutLink" runat="server" href="~/LogOut.aspx">LOG OUT</a></li>
+                        </ul>
+                   </div>
+                 <br>
+                <nav>
+                    <ul id="navigation">
+                        <li><a runat="server" href="~/Default.aspx"> HOME</a></li>   
+                        <li><a runat="server" href="~/Take_Quiz.aspx">QUIZ  </a></li>
+                        <li><a runat="server" href="~/Quiz_Results.aspx">RESULTS  </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <div id="container">
+
+         <div id="top_column">
+                 <asp:ContentPlaceHolder runat="server" ID="Content_Intro" />
+         </div>
+
+         <div id="main_column">
+                 <asp:ContentPlaceHolder runat="server" ID="Content_Main" />
+         </div>
+    </div>
+
+    <footer>
+         <div class="pageFormatting">
+                <p>&copy; <%: DateTime.Now.Year %> - Bethany Beery</p>
+         </div>
+    </footer>
+</body>
+</html>

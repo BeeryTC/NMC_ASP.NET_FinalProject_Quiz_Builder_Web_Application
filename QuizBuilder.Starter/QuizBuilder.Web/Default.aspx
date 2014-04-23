@@ -22,14 +22,14 @@
        <table>
         <!-- EMAIL -->                                      
           <tr>                                       
-                <!--Label -->      <td><asp:Label ID="Label_EmailLogin" runat="server" AssociatedControlID="txt_EmailLogin" >E-mail:</asp:Label></td>
+                <!--Label -->      <td style="width: 153px"><asp:Label ID="Label_UserLogin" runat="server" AssociatedControlID="txt_UserLogin" >User Name:</asp:Label></td>
                                                 
-               <!-- Text box -->  <td style="width: 536px"><asp:TextBox ID="txt_EmailLogin" runat="server"></asp:TextBox>
+               <!-- Text box -->  <td style="width: 536px"><asp:TextBox ID="txt_UserLogin" runat="server"></asp:TextBox>
                                         <!-- Validation -->  
-                                        <asp:RequiredFieldValidator ID="EmailRequired" runat="server" 
-                                               ControlToValidate="txt_EmailLogin" 
-                                               ErrorMessage="E-mail is required." 
-                                               ToolTip="E-mail is required." 
+                                        <asp:RequiredFieldValidator ID="UserRequired" runat="server" 
+                                               ControlToValidate="txt_UserLogin" 
+                                               ErrorMessage="User name is required." 
+                                               ToolTip="User name is required." 
                                                ValidationGroup="formLogInUser">*
                                         </asp:RequiredFieldValidator>
                                   </td>
@@ -37,7 +37,7 @@
 
           <!-- PASSWORD -->
            <tr>
-               <!--Label -->      <td><asp:Label ID="Label_PasswordLogin" runat="server" AssociatedControlID="txt_PasswordLogin">Password:</asp:Label></td>
+               <!--Label -->      <td style="width: 153px"><asp:Label ID="Label_PasswordLogin" runat="server" AssociatedControlID="txt_PasswordLogin">Password:</asp:Label></td>
               
                <!-- Text box -->  <td style="width: 536px"><asp:TextBox ID="txt_PasswordLogin" runat="server" TextMode="Password"></asp:TextBox>
                                          <!-- Validation -->
@@ -72,7 +72,7 @@
            
            <!-- LOGIN BUTTON -->               
            <tr>
-                                 <td><!-- empty first column --></td>               
+                                 <td style="width: 153px"><!-- empty first column --></td>               
                                  <td style="width: 536px">
                                      <a runat="server" href="Register.aspx"><h3>* Register if you don't have an account</h3></a>
                                      <asp:Button ID="btn_loginUser" runat="server" 
