@@ -47,7 +47,7 @@ namespace QuizBuilder.Data
         {
             using (var ctx = new QuizBuilderEntities())
             {
-                ctx.Attach(user);
+                ctx.Users.Attach(user);
                 var stateEntry = ctx.ObjectStateManager.GetObjectStateEntry(user);
                 foreach (var propertyName in stateEntry.CurrentValues
                                      .DataRecordInfo.FieldMetadata
